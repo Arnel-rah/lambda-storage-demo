@@ -20,7 +20,7 @@ public class TmpStoredIntService {
     }
     var randomInt = new Random().nextInt(10000);
     writeMessageIntoFile(String.valueOf(randomInt), file);
-    return file.toString();
+    return String.valueOf(randomInt);
   }
 
   private void writeMessageIntoFile(String message, File file) throws IOException {
